@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#FE07C8",
     color:"#EFEEEE",
     width:"300px",
-    border: " 1px solid #000000",
+    border: "2px solid #000000",
     padding: "5px",
-marginBottom: "5px",
-// fontFamily: "Comfortaa"
+marginBottom: "5px"
+// fontFamily: "Comfortaa-Bold"
 
   },
   button2: {
@@ -53,7 +53,7 @@ marginBottom: "5px",
     backgroundColor: "#AA47AC",
     color:"#EFEEEE",
     width:"300px",
-    border: " 1px solid #A010A3",
+    border: " 2px solid #A010A3",
     padding: "5px",
     marginBottom: "5px", 
     // fontFamily: "Comfortaa"
