@@ -2,17 +2,23 @@ import { StatusBar } from "expo-status-bar";
 import React from 'react';
 
 import { StyleSheet, Text, View } from "react-native";
-import logo from "./Pyng.png";
+import person from "./Media/Help and Profile Icon.svg";
+import send from "./Media/Send Pyng.svg"
+import receive from "./Media/Recv Pyng.svg"
+import wallet from "./Media/Wallet Icon.svg"
+import group from "./Media/Group 1041.svg"
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.image}>
-        <img src={logo} alt="logo" />
+      <View style={styles.profileLogoContainer}>
+        <img src={person} alt="profile logo" style={styles.profileLogo}/>
       </View>
       <View style={styles.buttons}>
-        <button style={styles.button1}>Login</button>
-        <button style={styles.button2}>Sign Up</button>
+      <img src={group} alt="profile logo" style={styles.group}/>
+      <img src={send} alt="profile logo" style={styles.send}/>
+      <img src={receive} alt="profile logo" style={styles.receive} />
+      <img src={wallet} alt="profile logo" style={styles.wallet}/>
       </View>
 
       <StatusBar style="auto" />
@@ -21,41 +27,25 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-
-  container: {
-    display: "flex",
-
-    backgroundColor: "#EFEEEE",
-    alignItems: "center",
-    justifyContent: "space-between",
-    width: "100%",
-  },
-  image: {
-    marginTop: "150px",
-    width: "60%",
+  container:{
+backgroundColor: "blue",
+width: "100%"
   },
 
-  button1: {
-    fontSize: "1.3rem",
-    borderRadius: "20px",
-    backgroundColor: "#FE07C8",
-    color:"#EFEEEE",
-    width:"300px",
-    border: "2px solid #000000",
-    padding: "5px",
-marginBottom: "5px",
-fontFamily: "Comfortaa-Regular"
+  profileLogoContainer: {
+    width:"98%",
+    backgroundColor: "yellow",
+    justifyContent: "flex-end", // Aligns the content to the far right
+    flexDirection: "row" // Ensures the items inside the container are in a row
 
   },
-  button2: {
-    fontSize: "1.3rem",
-    borderRadius: "20px",
-    backgroundColor: "#AA47AC",
-    color:"#EFEEEE",
-    width:"300px",
-    border: " 2px solid #A010A3",
-    padding: "5px",
-    marginBottom: "50px", 
-    fontFamily: "Comfortaa-Regular"
+  profileLogo:{
+    width: "5%",
+    backgroundColor:"green"
   },
+  // buttons{
+
+  // }
+
+  
 });
