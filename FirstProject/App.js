@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   image: {
-    marginTop: "200px",
+    marginTop: "150px",
     width: "60%",
   },
 
@@ -43,8 +43,8 @@ const styles = StyleSheet.create({
     width:"300px",
     border: "2px solid #000000",
     padding: "5px",
-marginBottom: "5px"
-// fontFamily: "Comfortaa-Bold"
+marginBottom: "5px",
+fontFamily: "Comfortaa-Regular"
 
   },
   button2: {
@@ -55,7 +55,7 @@ marginBottom: "5px"
     width:"300px",
     border: " 2px solid #A010A3",
     padding: "5px",
-    marginBottom: "5px", 
-    // fontFamily: "Comfortaa"
+    marginBottom: "50px", 
+    fontFamily: "Comfortaa-Regular"
   },
 });
